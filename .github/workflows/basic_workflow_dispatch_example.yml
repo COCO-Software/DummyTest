@@ -1,7 +1,9 @@
 name: Basic Workflow Dispatch Example
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
